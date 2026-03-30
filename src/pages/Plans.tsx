@@ -32,11 +32,6 @@ const Plans = () => (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, i) => (
             <AnimatedSection key={i} delay={i * 0.15}>
-<<<<<<< HEAD
-              <div className={`bg-card border rounded-xl p-8 text-center relative flex flex-col ${plan.popular ? "neon-border scale-105" : "border-border"}`}>
-                {plan.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 gradient-neon text-primary-foreground text-xs font-heading tracking-wider px-4 py-1 rounded-full">
-=======
               <div
                 className={`bg-card border rounded-xl p-8 text-center relative flex flex-col ${
                   plan.popular ? "neon-border scale-105" : "border-primary/15 shadow-[0_0_20px_rgba(57,255,20,0.06)]"
@@ -44,7 +39,6 @@ const Plans = () => (
               >
                 {plan.popular && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 cta-button cta-button--badge">
->>>>>>> 94512aa (final edit)
                     MOST POPULAR
                   </span>
                 )}
@@ -65,19 +59,11 @@ const Plans = () => (
                   href="https://wa.me/919999999999"
                   target="_blank"
                   rel="noopener noreferrer"
-<<<<<<< HEAD
-                  className={`font-heading tracking-wider px-6 py-3 rounded-md transition-opacity inline-block ${
-                    plan.popular
-                      ? "gradient-neon text-primary-foreground hover:opacity-90"
-                      : "border border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                  }`}
-=======
                   className={
                     plan.popular
                       ? "cta-button"
                       : "inline-flex items-center justify-center font-heading uppercase tracking-wide border-2 border-primary text-primary font-semibold bg-transparent rounded-lg px-6 py-3 min-h-[44px] hover:bg-[#2EE60F] hover:text-black hover:shadow-neon-hover hover:-translate-y-px transition-all duration-250 ease-in-out active:scale-[0.97] active:translate-y-0"
                   }
->>>>>>> 94512aa (final edit)
                 >
                   JOIN VIA WHATSAPP
                 </a>

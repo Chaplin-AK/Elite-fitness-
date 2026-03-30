@@ -1,14 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
-import { Award, Users, Dumbbell, Star, ChevronRight, Quote } from "lucide-react";
-import AnimatedSection from "@/components/AnimatedSection";
-import SectionTitle from "@/components/SectionTitle";
-import heroBg from "@/assets/hero-bg.jpg";
-import trainer1 from "@/assets/trainer1.jpg";
-import trainer2 from "@/assets/trainer2.jpg";
-import trainer3 from "@/assets/trainer3.jpg";
-=======
 import { Award, Users, Dumbbell, ChevronRight } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionTitle from "@/components/SectionTitle";
@@ -18,20 +9,14 @@ import HomeFaqSection from "@/components/HomeFaqSection";
 import { mainTrainers } from "@/data/trainers";
 import { homeTestimonials } from "@/data/homeTestimonials";
 import heroBg from "@/assets/hero-bg.jpg";
->>>>>>> 94512aa (final edit)
 import programWl from "@/assets/program-weightloss.jpg";
 import programMuscle from "@/assets/program-muscle.jpg";
 import programPersonal from "@/assets/program-personal.jpg";
 import programCardio from "@/assets/program-cardio.jpg";
-<<<<<<< HEAD
-import transform1 from "@/assets/transform1.jpg";
-import transform2 from "@/assets/transform2.jpg";
-=======
 import transform2Before from "@/assets/transform2-before.png";
 import transform2After from "@/assets/transform2-after.png";
 import transform1Before from "@/assets/transform1-before.png";
 import transform1After from "@/assets/transform1-after.png";
->>>>>>> 94512aa (final edit)
 
 const programs = [
   { title: "Weight Loss", img: programWl, desc: "Burn fat and get lean with targeted programs" },
@@ -46,22 +31,9 @@ const plans = [
   { name: "Premium", price: "₹2,999", features: ["All Standard Features", "Personal Trainer", "Nutrition Coaching", "Spa Access", "Priority Support"] },
 ];
 
-<<<<<<< HEAD
-const trainers = [
-  { name: "Arjun Kumar", role: "Head Trainer • 8 yrs exp", img: trainer1 },
-  { name: "Priya Sharma", role: "Fitness Coach • 5 yrs exp", img: trainer2 },
-  { name: "Rahul Menon", role: "Strength Coach • 6 yrs exp", img: trainer3 },
-];
-
-const testimonials = [
-  { name: "Vikram S.", text: "Lost 15kg in 3 months! The trainers at Elite Fitness are incredible. They pushed me beyond what I thought was possible.", stars: 5 },
-  { name: "Ananya R.", text: "Best gym in Chennai. The equipment is top-notch and the atmosphere keeps you motivated every single day.", stars: 5 },
-  { name: "Karthik M.", text: "Personal training here changed my life. I've gained confidence and strength I never knew I had.", stars: 5 },
-=======
 const transformationCards = [
   { left: transform1Before, right: transform1After },
   { left: transform2Before, right: transform2After },
->>>>>>> 94512aa (final edit)
 ];
 
 const Index = () => (
@@ -100,21 +72,13 @@ const Index = () => (
             href="https://wa.me/919999999999"
             target="_blank"
             rel="noopener noreferrer"
-<<<<<<< HEAD
-            className="gradient-neon text-primary-foreground font-heading text-lg tracking-wider px-8 py-4 rounded-md hover:opacity-90 transition-opacity inline-block"
-=======
             className="cta-button cta-button--lg hero-join-cta"
->>>>>>> 94512aa (final edit)
           >
             JOIN NOW
           </a>
           <Link
             to="/programs"
-<<<<<<< HEAD
-            className="border border-border text-foreground font-heading text-lg tracking-wider px-8 py-4 rounded-md hover:border-primary hover:text-primary transition-colors inline-block"
-=======
             className="inline-flex items-center justify-center border-2 border-border text-foreground font-heading text-lg uppercase tracking-wide font-semibold px-8 py-4 min-h-[48px] rounded-lg hover:border-primary hover:text-primary hover:shadow-neon hover:-translate-y-px transition-all duration-250 ease-in-out active:scale-[0.97] active:translate-y-0"
->>>>>>> 94512aa (final edit)
           >
             OUR PROGRAMS
           </Link>
@@ -136,11 +100,7 @@ const Index = () => (
           ].map((item, i) => (
             <AnimatedSection key={i} delay={i * 0.15}>
               <div className="bg-card border border-border rounded-lg p-8 text-center hover:neon-border transition-all duration-300 group">
-<<<<<<< HEAD
-                <item.icon className="w-10 h-10 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
-=======
                 <item.icon className="w-10 h-10 text-primary icon-neonthumb mx-auto mb-4 group-hover:scale-110 transition-transform" />
->>>>>>> 94512aa (final edit)
                 <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm">{item.desc}</p>
               </div>
@@ -171,14 +131,10 @@ const Index = () => (
           ))}
         </div>
         <div className="text-center mt-10">
-<<<<<<< HEAD
-          <Link to="/programs" className="inline-flex items-center gap-2 text-primary font-heading tracking-wider hover:gap-3 transition-all">
-=======
           <Link
             to="/programs"
             className="inline-flex items-center gap-2 text-primary font-heading font-semibold tracking-wide hover:gap-3 transition-all duration-250 ease-in-out hover:text-[#2EE60F]"
           >
->>>>>>> 94512aa (final edit)
             VIEW ALL PROGRAMS <ChevronRight className="w-4 h-4" />
           </Link>
         </div>
@@ -194,11 +150,6 @@ const Index = () => (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, i) => (
             <AnimatedSection key={i} delay={i * 0.15}>
-<<<<<<< HEAD
-              <div className={`bg-card border rounded-lg p-8 text-center relative ${plan.popular ? "neon-border" : "border-border"}`}>
-                {plan.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 gradient-neon text-primary-foreground text-xs font-heading tracking-wider px-4 py-1 rounded-full">
-=======
               <div
                 className={`bg-card border rounded-lg p-8 text-center relative ${
                   plan.popular ? "neon-border" : "border-primary/15 shadow-[0_0_16px_rgba(57,255,20,0.05)]"
@@ -206,7 +157,6 @@ const Index = () => (
               >
                 {plan.popular && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 cta-button cta-button--badge">
->>>>>>> 94512aa (final edit)
                     POPULAR
                   </span>
                 )}
@@ -230,11 +180,7 @@ const Index = () => (
         <div className="text-center mt-10">
           <Link
             to="/plans"
-<<<<<<< HEAD
-            className="gradient-neon text-primary-foreground font-heading tracking-wider px-8 py-3 rounded-md hover:opacity-90 transition-opacity inline-block"
-=======
             className="cta-button inline-flex items-center justify-center"
->>>>>>> 94512aa (final edit)
           >
             VIEW ALL PLANS
           </Link>
@@ -248,13 +194,6 @@ const Index = () => (
         <AnimatedSection>
           <SectionTitle title="Client Transformations" subtitle="Real results from real members" />
         </AnimatedSection>
-<<<<<<< HEAD
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-          {[transform1, transform2].map((img, i) => (
-            <AnimatedSection key={i} delay={i * 0.2}>
-              <div className="rounded-lg overflow-hidden border border-border">
-                <img src={img} alt={`Transformation ${i + 1}`} className="w-full h-auto" loading="lazy" />
-=======
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {transformationCards.map((card, i) => (
             <AnimatedSection key={i} delay={i * 0.12}>
@@ -273,7 +212,6 @@ const Index = () => (
                     loading="lazy"
                   />
                 </div>
->>>>>>> 94512aa (final edit)
               </div>
             </AnimatedSection>
           ))}
@@ -287,81 +225,24 @@ const Index = () => (
         <AnimatedSection>
           <SectionTitle title="Our Trainers" subtitle="Meet the experts behind your transformation" />
         </AnimatedSection>
-<<<<<<< HEAD
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {trainers.map((t, i) => (
-            <AnimatedSection key={i} delay={i * 0.15}>
-              <div className="group text-center">
-                <div className="overflow-hidden rounded-lg aspect-[4/5] mb-4">
-                  <img src={t.img} alt={t.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                </div>
-                <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-foreground">{t.name}</h3>
-                <p className="text-muted-foreground text-sm">{t.role}</p>
-              </div>
-=======
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
           {mainTrainers.map((t, i) => (
             <AnimatedSection key={t.name} delay={i * 0.08}>
               <TrainerCard trainer={t} variant="home" />
->>>>>>> 94512aa (final edit)
             </AnimatedSection>
           ))}
         </div>
       </div>
     </section>
 
-<<<<<<< HEAD
     {/* Testimonials */}
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <AnimatedSection>
-          <SectionTitle title="What Members Say" subtitle="Hear from our community" />
-        </AnimatedSection>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {testimonials.map((t, i) => (
-            <AnimatedSection key={i} delay={i * 0.15}>
-              <div className="bg-card border border-border rounded-lg p-6">
-                <Quote className="w-8 h-8 text-primary/30 mb-3" />
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">"{t.text}"</p>
-                <div className="flex items-center gap-1 mb-2">
-                  {Array.from({ length: t.stars }).map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-primary text-primary" />
-                  ))}
-                </div>
-                <span className="font-heading text-sm font-bold text-foreground">{t.name}</span>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
-      </div>
-    </section>
-=======
     <TestimonialsMarquee items={homeTestimonials} />
->>>>>>> 94512aa (final edit)
 
     {/* Final CTA */}
     <section className="py-20 bg-gradient-dark">
       <div className="container mx-auto px-4 text-center">
         <AnimatedSection>
           <h2 className="font-heading text-3xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
-<<<<<<< HEAD
-            Start Your Fitness Journey <span className="text-primary">Today</span>
-          </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto mb-8">
-            Take the first step towards a healthier, stronger you. Join Elite Fitness now.
-          </p>
-          <a
-            href="https://wa.me/919999999999"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gradient-neon text-primary-foreground font-heading text-lg tracking-wider px-10 py-4 rounded-md hover:opacity-90 transition-opacity inline-block"
-          >
-            JOIN NOW
-          </a>
-        </AnimatedSection>
-      </div>
-    </section>
-=======
             Start Your Fitness Journey <span className="text-neon">Today</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-base md:text-lg">
@@ -381,7 +262,6 @@ const Index = () => (
       imageSrc={programPersonal}
       imageAlt="Personal training guidance at Elite Fitness"
     />
->>>>>>> 94512aa (final edit)
   </div>
 );
 

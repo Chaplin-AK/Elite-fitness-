@@ -9,19 +9,6 @@ import gallery6 from "@/assets/gallery6.jpg";
 import transform1 from "@/assets/transform1.jpg";
 import transform2 from "@/assets/transform2.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
-<<<<<<< HEAD
-
-const images = [
-  { src: heroBg, alt: "Gym Interior" },
-  { src: gallery1, alt: "Cardio Zone" },
-  { src: gallery2, alt: "Group Fitness" },
-  { src: gallery3, alt: "Boxing Training" },
-  { src: gallery4, alt: "Dumbbell Rack" },
-  { src: gallery5, alt: "Stretching Area" },
-  { src: gallery6, alt: "Locker Room" },
-  { src: transform1, alt: "Client Transformation" },
-  { src: transform2, alt: "Client Transformation" },
-=======
 import programWl from "@/assets/program-weightloss.jpg";
 import programMuscle from "@/assets/program-muscle.jpg";
 import programPersonal from "@/assets/program-personal.jpg";
@@ -43,7 +30,6 @@ const images = [
   { src: programCardio, alt: "Cardio equipment", span: "" },
   { src: programPersonal, alt: "Personal training session", span: "wide" },
   { src: programWl, alt: "Weight-loss program area", span: "" },
->>>>>>> 94512aa (final edit)
 ];
 
 const Gallery = () => (
@@ -54,20 +40,6 @@ const Gallery = () => (
           <SectionTitle title="Our Gallery" subtitle="Take a look inside Elite Fitness" />
         </AnimatedSection>
 
-<<<<<<< HEAD
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-          {images.map((img, i) => (
-            <AnimatedSection key={i} delay={i * 0.05}>
-              <div className="rounded-lg overflow-hidden break-inside-avoid group">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-              </div>
-            </AnimatedSection>
-=======
         <div className="mt-10 grid w-full grid-flow-dense grid-cols-1 gap-5 auto-rows-[200px] sm:grid-cols-2 lg:grid-cols-4">
           {images.map((img, i) => (
             <div
@@ -88,7 +60,6 @@ const Gallery = () => (
                 }}
               />
             </div>
->>>>>>> 94512aa (final edit)
           ))}
         </div>
       </div>

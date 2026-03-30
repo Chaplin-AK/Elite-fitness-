@@ -13,8 +13,6 @@ export default {
       },
     },
     extend: {
-<<<<<<< HEAD
-=======
       transitionDuration: {
         250: "250ms",
       },
@@ -22,7 +20,6 @@ export default {
         neon: "0 0 4px rgba(57, 255, 20, 0.4)",
         "neon-hover": "0 0 10px #39ff14, 0 0 18px #39ff14",
       },
->>>>>>> 94512aa (final edit)
       fontFamily: {
         heading: ["Oswald", "sans-serif"],
         body: ["Inter", "sans-serif"],
@@ -91,13 +88,14 @@ export default {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "pulse-neon": {
-<<<<<<< HEAD
-          "0%, 100%": { boxShadow: "0 0 20px hsl(120 100% 55% / 0.4)" },
-          "50%": { boxShadow: "0 0 40px hsl(120 100% 55% / 0.6)" },
-=======
-          "0%, 100%": { boxShadow: "0 0 8px rgba(57, 255, 20, 0.5), 0 0 16px rgba(57, 255, 20, 0.28)" },
-          "50%": { boxShadow: "0 0 12px rgba(57, 255, 20, 0.55), 0 0 22px rgba(57, 255, 20, 0.32)" },
->>>>>>> 94512aa (final edit)
+          "0%, 100%": {
+            boxShadow:
+              "0 0 8px rgba(57, 255, 20, 0.5), 0 0 16px rgba(57, 255, 20, 0.28), 0 0 20px hsl(120 100% 55% / 0.4)",
+          },
+          "50%": {
+            boxShadow:
+              "0 0 14px rgba(57, 255, 20, 0.6), 0 0 26px rgba(57, 255, 20, 0.36), 0 0 40px hsl(120 100% 55% / 0.6)",
+          },
         },
       },
       animation: {

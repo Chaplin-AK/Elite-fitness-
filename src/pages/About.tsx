@@ -1,42 +1,3 @@
-<<<<<<< HEAD
-import { CheckCircle, Target, Eye } from "lucide-react";
-import AnimatedSection from "@/components/AnimatedSection";
-import SectionTitle from "@/components/SectionTitle";
-import trainer1 from "@/assets/trainer1.jpg";
-import trainer2 from "@/assets/trainer2.jpg";
-import trainer3 from "@/assets/trainer3.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
-
-const whyUs = [
-  "5+ years of fitness excellence in Chennai",
-  "Internationally certified trainers",
-  "State-of-the-art equipment and facilities",
-  "Personalized nutrition and workout plans",
-  "Supportive and motivating community",
-  "Flexible membership options",
-];
-
-const trainers = [
-  { name: "Arjun Kumar", role: "Head Trainer", exp: "8 years experience in strength training and HIIT", img: trainer1 },
-  { name: "Priya Sharma", role: "Fitness Coach", exp: "5 years experience in weight loss and functional training", img: trainer2 },
-  { name: "Rahul Menon", role: "Strength Coach", exp: "6 years experience in powerlifting and sports conditioning", img: trainer3 },
-];
-
-const About = () => (
-  <div className="pt-16">
-    {/* Hero */}
-    <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="About Elite Fitness" className="w-full h-full object-cover" loading="lazy" />
-        <div className="absolute inset-0 bg-background/85" />
-      </div>
-      <div className="relative container mx-auto px-4 text-center">
-        <h1 className="font-heading text-4xl md:text-6xl font-bold uppercase tracking-wider text-foreground">
-          About <span className="text-primary">Us</span>
-        </h1>
-        <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-          Discover the story behind Chennai's most trusted fitness brand
-=======
 import { Link } from "react-router-dom";
 import {
   Dumbbell,
@@ -149,17 +110,6 @@ const About = () => (
 
     {/* Story */}
     <section className="py-20">
-<<<<<<< HEAD
-      <div className="container mx-auto px-4 max-w-3xl">
-        <AnimatedSection>
-          <SectionTitle title="Our Story" />
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            Founded in 2019, Elite Fitness was born from a simple belief: everyone deserves access to world-class fitness training. What started as a small gym in T. Nagar, Chennai, has grown into a premier fitness destination trusted by thousands of members.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Our team of certified trainers combines cutting-edge training methodologies with personalized attention, ensuring every member achieves their unique fitness goals — whether it's weight loss, muscle building, or overall wellness.
-          </p>
-=======
       <div className="container mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
         <AnimatedSection>
           <SectionTitle title="Our Story" />
@@ -174,34 +124,11 @@ const About = () => (
               whether the goal is fat loss, muscle, or long-term wellness.
             </p>
           </div>
->>>>>>> 94512aa (final edit)
         </AnimatedSection>
       </div>
     </section>
 
     {/* Mission & Vision */}
-<<<<<<< HEAD
-    <section className="py-20 bg-gradient-dark">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <AnimatedSection>
-            <div className="bg-card border border-border rounded-lg p-8">
-              <Target className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-heading text-2xl font-bold uppercase tracking-wider text-foreground mb-3">Our Mission</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                To empower individuals to achieve their best physical and mental health through expert training, modern facilities, and a supportive community.
-              </p>
-            </div>
-          </AnimatedSection>
-          <AnimatedSection delay={0.15}>
-            <div className="bg-card border border-border rounded-lg p-8">
-              <Eye className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-heading text-2xl font-bold uppercase tracking-wider text-foreground mb-3">Our Vision</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                To become South India's most impactful fitness brand, inspiring a culture of health and wellness across all communities.
-              </p>
-            </div>
-=======
     <section className="bg-gradient-dark py-20">
       <div className="container mx-auto px-4">
         <AnimatedSection>
@@ -227,7 +154,6 @@ const About = () => (
               imageAlt="Cardio and conditioning zone"
               bullets={visionBullets}
             />
->>>>>>> 94512aa (final edit)
           </AnimatedSection>
         </div>
       </div>
@@ -237,23 +163,6 @@ const About = () => (
     <section className="py-20">
       <div className="container mx-auto px-4">
         <AnimatedSection>
-<<<<<<< HEAD
-          <SectionTitle title="Meet Our Trainers" subtitle="The experts behind your transformation" />
-        </AnimatedSection>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {trainers.map((t, i) => (
-            <AnimatedSection key={i} delay={i * 0.15}>
-              <div className="text-center">
-                <div className="overflow-hidden rounded-lg aspect-[4/5] mb-4">
-                  <img src={t.img} alt={t.name} className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-foreground">{t.name}</h3>
-                <p className="text-primary text-sm font-heading tracking-wider">{t.role}</p>
-                <p className="text-muted-foreground text-sm mt-1">{t.exp}</p>
-              </div>
-            </AnimatedSection>
-          ))}
-=======
           <SectionTitle title="Meet Our Team" subtitle="Lead coaches & the crew behind your experience" />
         </AnimatedSection>
 
@@ -288,18 +197,6 @@ const About = () => (
       </div>
     </section>
 
-<<<<<<< HEAD
-    {/* Why Choose Us */}
-    <section className="py-20 bg-gradient-dark">
-      <div className="container mx-auto px-4 max-w-2xl">
-        <AnimatedSection>
-          <SectionTitle title="Why Choose Us" />
-          <ul className="space-y-4">
-            {whyUs.map((item, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
-=======
     {/* CTA band */}
     <section className="relative overflow-hidden border-y border-primary/20 bg-[#060606] py-20">
       <div
@@ -353,7 +250,6 @@ const About = () => (
                   <Icon className="h-5 w-5" strokeWidth={2.2} aria-hidden />
                 </span>
                 <span className="text-sm font-medium leading-relaxed text-foreground/90 sm:pt-0">{text}</span>
->>>>>>> 94512aa (final edit)
               </li>
             ))}
           </ul>

@@ -46,11 +46,7 @@ const Programs = () => (
             <AnimatedSection key={i}>
               <div className={`flex flex-col ${i % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-8 items-center max-w-5xl mx-auto`}>
                 <div className="w-full md:w-1/2">
-<<<<<<< HEAD
-                  <div className="rounded-lg overflow-hidden aspect-[5/4]">
-=======
                   <div className="rounded-lg overflow-hidden aspect-[5/4] border border-primary/20 shadow-[0_0_24px_rgba(57,255,20,0.1)]">
->>>>>>> 94512aa (final edit)
                     <img src={p.img} alt={p.title} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                 </div>
@@ -63,11 +59,7 @@ const Programs = () => (
                     {p.benefits.map((b, j) => (
                       <li key={j} className="flex items-center gap-3">
                         <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-<<<<<<< HEAD
-                        <span className="text-secondary-foreground text-sm">{b}</span>
-=======
                         <span className="text-muted-foreground text-sm">{b}</span>
->>>>>>> 94512aa (final edit)
                       </li>
                     ))}
                   </ul>
@@ -75,11 +67,7 @@ const Programs = () => (
                     href="https://wa.me/919999999999"
                     target="_blank"
                     rel="noopener noreferrer"
-<<<<<<< HEAD
-                    className="gradient-neon text-primary-foreground font-heading tracking-wider px-6 py-3 rounded-md hover:opacity-90 transition-opacity inline-block mt-6"
-=======
                     className="cta-button inline-block mt-6"
->>>>>>> 94512aa (final edit)
                   >
                     ENQUIRE NOW
                   </a>
