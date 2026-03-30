@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+<<<<<<< HEAD
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 120 100% 55%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 120 100% 55%;
+    --accent-foreground: 0 0% 2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 120 100% 55%;
+
+    --radius: 0.5rem;
+
+    --neon-glow: 0 0 20px hsl(120 100% 55% / 0.4), 0 0 40px hsl(120 100% 55% / 0.2);
+
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 120 100% 55%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 120 100% 55%;
+=======
+/* Brand: neon green only as accent on black / white — #39FF14 primary, #2EE60F hover */
+@layer base {
+  :root {
+    --neon: #39ff14;
+    --neon-hover: #2ee60f;
+    --neon-foreground: #000000;
+
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    /* HSL aligned to #39FF14 */
+    --primary: 111 100% 54%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 111 100% 54%;
+    --accent-foreground: 0 0% 0%;
+
+    /* Monochrome “destructive” — light gray for readable messages; no extra hues */
+    --destructive: 0 0% 72%;
+    --destructive-foreground: 0 0% 0%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 16%;
+    --ring: 111 100% 54%;
+
+    --radius: 0.5rem;
+
+    /* Buttons: minimal glow default; stronger on hover (see .cta-button--fab for icon) */
+    --cta-glow: 0 0 4px rgba(57, 255, 20, 0.4);
+    --cta-glow-hover: 0 0 10px #39ff14, 0 0 18px #39ff14;
+    /* Cards / outlines — soft only */
+    --neon-glow: 0 0 6px rgba(57, 255, 20, 0.35), 0 0 12px rgba(57, 255, 20, 0.2);
+    --neon-glow-hover: 0 0 10px rgba(57, 255, 20, 0.45), 0 0 18px rgba(57, 255, 20, 0.22);
+    /* Headline highlights (e.g. “Today”) — subtle, no button-style bleed */
+    --neon-glow-text: 0 0 8px rgba(57, 255, 20, 0.45), 0 0 16px rgba(57, 255, 20, 0.2);
+    /* Floating icon / WhatsApp — slightly more presence than text CTAs */
+    --cta-glow-fab: 0 0 8px rgba(57, 255, 20, 0.5), 0 0 16px rgba(57, 255, 20, 0.28);
+    --cta-glow-fab-hover: 0 0 12px rgba(57, 255, 20, 0.55), 0 0 22px rgba(57, 255, 20, 0.32);
+
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 111 100% 54%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 111 100% 54%;
+>>>>>>> 94512aa (final edit)
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+<<<<<<< HEAD
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+=======
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-foreground;
+>>>>>>> 94512aa (final edit)
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+<<<<<<< HEAD
+@layer utilities {
+  .text-neon {
+    color: hsl(var(--primary));
+    text-shadow: var(--neon-glow);
+  }
+
+  .neon-border {
+    border-color: hsl(var(--primary));
+    box-shadow: var(--neon-glow);
+=======
+/* Primary CTAs: solid neon, crisp black text, glow on box only */
+@layer components {
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    color: #000000;
+    background-color: #39ff14;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 26px;
+    min-height: 44px;
+    cursor: pointer;
+    box-shadow: var(--cta-glow);
+    transition: all 0.25s ease;
+  }
+
+  .cta-button:hover:not(:disabled) {
+    background-color: #2ee60f;
+    box-shadow: var(--cta-glow-hover);
+    transform: translateY(-1px);
+  }
+
+  .cta-button:active:not(:disabled) {
+    transform: scale(0.97) translateY(0);
+  }
+
+  .cta-button:focus-visible {
+    outline: 2px solid #39ff14;
+    outline-offset: 3px;
+  }
+
+  .cta-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: var(--cta-glow);
+  }
+
+  .cta-button svg {
+    color: #000000;
+    text-shadow: none;
+    filter: none;
+    flex-shrink: 0;
+  }
+
+  /* Navbar / compact */
+  .cta-button--sm {
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 8px;
+    min-height: 40px;
+  }
+
+  /* Hero / large hero CTAs */
+  .cta-button--lg {
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    min-height: 48px;
+  }
+
+  /* Full-width form submit */
+  .cta-button--block {
+    width: 100%;
+  }
+
+  /* Popular / badge chips (still solid, readable) */
+  .cta-button--badge {
+    padding: 6px 16px;
+    font-size: 11px;
+    line-height: 1.2;
+    border-radius: 9999px;
+    letter-spacing: 0.5px;
+    min-height: 0;
+    min-width: 0;
+  }
+
+  /* WhatsApp floating — allowed a bit more glow than text CTAs */
+  .cta-button--fab {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0;
+    border-radius: 9999px;
+    box-shadow: var(--cta-glow-fab);
+  }
+
+  .cta-button.cta-button--fab:hover:not(:disabled) {
+    box-shadow: var(--cta-glow-fab-hover);
+  }
+
+  .cta-button--fab svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* Section title underline — solid bar, no text */
+  /* Hero main CTA only — keeps label vertically centered (do not use inline-block on this link) */
+  .hero-join-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+  }
+
+  .neon-accent-line {
+    width: 5rem;
+    height: 0.25rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9999px;
+    background-color: #39ff14;
+    box-shadow: none;
+  }
+}
+
+@layer utilities {
+  .text-neon {
+    color: var(--neon);
+    text-shadow: var(--neon-glow-text);
+  }
+
+  .neon-border {
+    border-color: var(--neon);
+    box-shadow: var(--neon-glow), inset 0 0 0 1px rgba(57, 255, 20, 0.12);
+>>>>>>> 94512aa (final edit)
+  }
+
+  .neon-glow {
+    box-shadow: var(--neon-glow);
+  }
+
+<<<<<<< HEAD
+  .gradient-neon {
+    background: linear-gradient(135deg, hsl(120 100% 55%), hsl(150 100% 45%));
+  }
+
+  .bg-gradient-dark {
+    background: linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 8%));
+=======
+  .neon-glow-hover {
+    box-shadow: var(--neon-glow-hover);
+  }
+
+  .bg-gradient-dark {
+    background: linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 5%));
+  }
+
+  .nav-link-active {
+    color: var(--neon);
+    text-shadow: var(--neon-glow-text);
+  }
+
+  .icon-neonthumb {
+    filter: drop-shadow(0 0 4px rgba(57, 255, 20, 0.45));
+  }
+
+  .testimonial-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  @keyframes scrollLoop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scrollLoopReverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .testimonial-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    will-change: transform;
+    animation: scrollLoopReverse 25s linear infinite;
+  }
+
+  @media (hover: hover) {
+    .testimonial-wrapper:hover .testimonial-track {
+      animation-play-state: paused;
+    }
+  }
+
+  .testimonial-card {
+    min-width: 300px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-track {
+      animation-duration: 34s;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonial-track {
+      animation-duration: 60s;
+    }
+>>>>>>> 94512aa (final edit)
+  }
+}
