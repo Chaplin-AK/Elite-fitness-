@@ -2,24 +2,14 @@ import { Link } from "react-router-dom";
 import { Dumbbell, Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => (
-<<<<<<< HEAD
-  <footer className="bg-secondary border-t border-border">
-=======
   <footer className="bg-background border-t border-primary/25">
->>>>>>> 94512aa (final edit)
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
-<<<<<<< HEAD
-            <Dumbbell className="w-6 h-6 text-primary" />
-            <span className="font-heading text-lg font-bold text-foreground">
-              ELITE <span className="text-primary">FITNESS</span>
-=======
             <Dumbbell className="w-6 h-6 text-primary icon-neonthumb" />
             <span className="font-heading text-lg font-bold text-foreground">
               ELITE <span className="text-primary drop-shadow-[0_0_10px_rgba(57,255,20,0.45)]">FITNESS</span>
->>>>>>> 94512aa (final edit)
             </span>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -31,15 +21,11 @@ const Footer = () => (
           <h4 className="font-heading text-sm tracking-widest uppercase text-foreground mb-4">Quick Links</h4>
           <div className="flex flex-col gap-2">
             {["About", "Programs", "Plans", "Gallery", "Contact"].map((l) => (
-<<<<<<< HEAD
-              <Link key={l} to={`/${l.toLowerCase()}`} className="text-muted-foreground text-sm hover:text-primary transition-colors">
-=======
               <Link
                 key={l}
                 to={`/${l.toLowerCase()}`}
                 className="text-muted-foreground text-sm hover:text-primary transition-colors duration-200"
               >
->>>>>>> 94512aa (final edit)
                 {l}
               </Link>
             ))}

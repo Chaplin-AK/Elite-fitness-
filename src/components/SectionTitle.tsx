@@ -10,11 +10,7 @@ const SectionTitle = ({ title, subtitle, center = true }: Props) => (
       {title.split(" ").map((word, i) => (
         <span key={i}>
           {i === title.split(" ").length - 1 ? (
-<<<<<<< HEAD
-            <span className="text-primary">{word}</span>
-=======
             <span className="text-neon">{word}</span>
->>>>>>> 94512aa (final edit)
           ) : (
             word + " "
           )}
@@ -24,11 +20,7 @@ const SectionTitle = ({ title, subtitle, center = true }: Props) => (
     {subtitle && (
       <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">{subtitle}</p>
     )}
-<<<<<<< HEAD
-    <div className="w-20 h-1 gradient-neon rounded-full mt-4 mx-auto" />
-=======
     <div className="neon-accent-line" />
->>>>>>> 94512aa (final edit)
   </div>
 );
 

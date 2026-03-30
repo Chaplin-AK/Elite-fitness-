@@ -103,7 +103,6 @@ const About = () => (
         <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
           Discover the story behind Chennai&apos;s most trusted fitness brand — built on discipline, community, and
           real results.
->>>>>>> 94512aa (final edit)
         </p>
       </div>
     </section>
@@ -192,7 +191,6 @@ const About = () => (
               ))}
             </div>
           </div>
->>>>>>> 94512aa (final edit)
         </div>
       </div>
     </section>
