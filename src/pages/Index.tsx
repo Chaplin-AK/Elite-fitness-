@@ -32,8 +32,8 @@ const plans = [
 ];
 
 const transformationCards = [
-  { left: transform1Before, right: transform1After },
-  { left: transform2Before, right: transform2After },
+  { left: transform1After, right: transform1Before },
+  { left: transform2After, right: transform2Before },
 ];
 
 const Index = () => (
