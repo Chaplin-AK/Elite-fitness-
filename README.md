@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Elite Fitness
 
 TODO: Document your project here
